@@ -72,11 +72,17 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://github.com/adrianhajdin?tab=repositories",
+    title: "Collaborative LiveDocs",
+    des: "LiveDocs is a clone of Goole Docs using Liveblocks for real-time features and styled with TailwindCSS.",
+    img: "/live_docs.PNG",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/live_blocks.svg",
+      "/c.svg",
+    ],
+    link: "https://live-docs-snowy-sigma.vercel.app/",
   },
   {
     id: 2,
@@ -84,15 +90,15 @@ export const projects = [
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/zoom-clone",
+    link: "https://zoom-clone-kappa-two.vercel.app/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://github.com/adrianhajdin/ai_saas_app",
+    title: "Modern UI/UX SaaS Website",
+    des: "Xora is a Modern UI/UX SaaS website developed using React.js and Tailwind CSS.",
+    img: "/xora.png",
+    iconLists: ["/js_logo.svg", "/vite.svg", "/re.svg", "/tail.svg"],
+    link: "https://xora-saas-landing-page-two.vercel.app/",
   },
   {
     id: 4,
@@ -100,7 +106,7 @@ export const projects = [
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/adrianhajdin/iphone",
+    link: "https://iphone-doc.vercel.app/",
   },
 ];
 

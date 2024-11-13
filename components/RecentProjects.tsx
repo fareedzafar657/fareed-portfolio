@@ -2,6 +2,7 @@ import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
 import { FaLocationArrow } from "react-icons/fa6";
+import clsx from "clsx";
 
 const RecentProjects = () => {
   return (
@@ -14,14 +15,24 @@ const RecentProjects = () => {
         {projects.map(({ id, des, iconLists, img, link, title }) => (
           <div
             key={id}
-            className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+            className="sm:h-[35rem] h-[28rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
           >
             <PinContainer title={link} href={link}>
               <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
                 <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
                   <img src="/bg.png" alt="bg-img" />
                 </div>
-                <img src={img} alt={title} className="z-10 absolute bottom-0" />
+                <img
+                  src={img}
+                  alt={title}
+                  className={clsx(
+                    id === 1
+                      ? "z-10 absolute flex  items-center"
+                      : id === 3
+                      ? "absolute z-10 -top-14"
+                      : "z-10 absolute bottom-0"
+                  )}
+                />
               </div>
               <h1 className="font-bold lg:text-2xl md:text-xl text-base  line-clamp-1">
                 {title}
